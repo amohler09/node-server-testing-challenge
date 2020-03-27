@@ -21,7 +21,10 @@ function findById(id) {
 
 function add(food) {
     return db('foods')
-        .insert(food);
+        .insert(food)
+        .then(id => {
+            return findById(id[0]);
+        })
 }
 
 function remove(id) {
