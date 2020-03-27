@@ -6,9 +6,6 @@
   "scripts": {
     "test": "jest --watch"
   },
-  "jest": {
-    "testEnvironment": "node"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LambdaSchool/node-server-testing.git"
@@ -26,5 +23,8 @@
   },
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
